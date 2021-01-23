@@ -1,6 +1,7 @@
 # fluxus-cypress-testing
-This REPO contains code for the Fluxus Tech Tes
 
-you will need to install cypress in order to run this application
+This REPO contains code for the Fluxus Tech Test
 
-- yarn add cypress
+It is now configured to run the Cypress tests in the repo when a push is made using Git Workflow. Config file here...
+
+https://github.com/joecalleya/fluxus-cypress-testing/tree/main/.github/workflows
