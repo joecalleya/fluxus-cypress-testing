@@ -12,10 +12,6 @@ run 'npm i cypress-plugin-snapshots -S'
 
 capture the element screenshot and compare to the baseline image
 
-
-
-
-
 Future Improvements 
 
 - If the number of Tests increased, the code can easily be made into a function to run for different pages or interactions
