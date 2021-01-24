@@ -1,5 +1,9 @@
 {    
     "projectId": "d7nwe2",
+    "ignoreTestFiles": [
+      "**/__snapshots__/*",
+      "**/__image_snapshots__/*"
+    ],
      "cypress-plugin-snapshots": {
 
         "imageConfig": {
