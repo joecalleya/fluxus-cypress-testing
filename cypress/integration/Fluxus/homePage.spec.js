@@ -1,4 +1,6 @@
 
+const page = `https://cities.trueid.net`;
+
 //this page will test the Homepage renders and can be interacted with
 
 
@@ -6,7 +8,7 @@
 //this test checks if the page has loaded correctly, this is important in oder to make sure that the elements are working and that the code has compiled successfully
 describe('The Home Page', () => {
     it('successfully loads', () => {
-      cy.visit('https://cities.trueid.net') 
+      cy.visit(page) 
    })
 // Test 2 Click on SearchIcon
 //This Test makes sure that the Search button clicking is working. this allows the search bar to be interacted with
@@ -22,4 +24,14 @@ describe('The Home Page', () => {
         cy.get('.Input-wun2o8-0')
           .type('Where is my article').should('have.value', 'Where is my article')
     })
+
+//Test 4  Type into Search Icon
+//This Test makes sure that the page look the same as previous image snapshot. 
+//this is very powerful for testing impact on visual elements without updating code.
+
+
+    it('Visual Test - home page screenshot', () => {
+        cy.document()
+              .toMatchImageSnapshot();
+      });
 })
